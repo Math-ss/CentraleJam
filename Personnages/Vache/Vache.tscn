@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlvt0bherd8jq"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_43oym"]
+[ext_resource type="SpriteFrames" uid="uid://du2lwgecf2yye" path="res://Personnages/Vache/VacheFrames.tres" id="2_6kcss"]
+
+[node name="Sprite" instance=ExtResource("1_43oym")]
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_6kcss")
+animation = &"Walk"
+frame_progress = 0.621738

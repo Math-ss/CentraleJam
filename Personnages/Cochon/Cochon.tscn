@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bopw0sa1cdg4p"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_421am"]
+[ext_resource type="SpriteFrames" uid="uid://7a4oiy08pqu7" path="res://Personnages/Cochon/CochonFrames.tres" id="2_rghnw"]
+
+[node name="Sprite" instance=ExtResource("1_421am")]
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_rghnw")
+frame_progress = 0.401167
