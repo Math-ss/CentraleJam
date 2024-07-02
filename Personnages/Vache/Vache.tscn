@@ -8,4 +8,3 @@
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = ExtResource("2_6kcss")
 animation = &"Walk"
-frame_progress = 0.621738

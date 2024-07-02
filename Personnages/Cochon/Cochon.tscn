@@ -5,6 +5,10 @@
 
 [node name="Sprite" instance=ExtResource("1_421am")]
 
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, -2)
+
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = ExtResource("2_rghnw")
-frame_progress = 0.401167
+animation = &"Walk"
+frame_progress = 0.127356

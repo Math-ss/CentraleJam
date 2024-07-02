@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://fxkrdklbnsn4"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_4e4ba"]
+[ext_resource type="SpriteFrames" uid="uid://i7o44w7frtpt" path="res://Personnages/Oie/OieFrames.tres" id="2_8faxi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2ddgf"]
+radius = 60.0
+height = 230.0
+
+[node name="Sprite" instance=ExtResource("1_4e4ba")]
+vitesse = 20.0
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CapsuleShape2D_2ddgf")
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_8faxi")
+animation = &"Walk"
