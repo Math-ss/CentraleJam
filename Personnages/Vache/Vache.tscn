@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlvt0bherd8jq"]
+[gd_scene load_steps=4 format=3 uid="uid://dlvt0bherd8jq"]
 
 [ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_u26vd"]
 [ext_resource type="SpriteFrames" uid="uid://du2lwgecf2yye" path="res://Personnages/Vache/VacheFrames.tres" id="2_fu8ch"]
+[ext_resource type="Script" path="res://Personnages/Animal.gd" id="2_q2s2t"]
 
 [node name="Vache" instance=ExtResource("1_u26vd")]
+script = ExtResource("2_q2s2t")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = ExtResource("2_fu8ch")

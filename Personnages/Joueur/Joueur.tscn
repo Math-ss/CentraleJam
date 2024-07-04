@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dorwtbivsnapb"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_nvl1o"]
+[ext_resource type="SpriteFrames" uid="uid://bc18spv4iwemn" path="res://Personnages/Mouton/MoutonFrames.tres" id="2_4ltul"]
+[ext_resource type="Script" path="res://Personnages/Joueur/Joueur.gd" id="2_cihgd"]
+
+[node name="Joueur" instance=ExtResource("1_nvl1o")]
+script = ExtResource("2_cihgd")
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_4ltul")
+
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
