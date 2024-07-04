@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_421am"]
 [ext_resource type="SpriteFrames" uid="uid://7a4oiy08pqu7" path="res://Personnages/Cochon/CochonFrames.tres" id="2_rghnw"]
 
-[node name="Sprite" instance=ExtResource("1_421am")]
+[node name="Cochon" instance=ExtResource("1_421am")]
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(0, -2)
