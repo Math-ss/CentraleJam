@@ -1,0 +1,255 @@
+[gd_resource type="SpriteFrames" load_steps=61 format=3 uid="uid://uf4ykmiebcv4"]
+
+[ext_resource type="Texture2D" uid="uid://cju545fx04m15" path="res://Personnages/Fermier/Frames/Walk/0001.png" id="1_lb8yw"]
+[ext_resource type="Texture2D" uid="uid://dhjw4fjtch3x6" path="res://Personnages/Fermier/Frames/Idle/0001.png" id="1_ow3vn"]
+[ext_resource type="Texture2D" uid="uid://bhlxcd4o2ega2" path="res://Personnages/Fermier/Frames/Idle/0002.png" id="2_t2eux"]
+[ext_resource type="Texture2D" uid="uid://bq82tchbl1u0f" path="res://Personnages/Fermier/Frames/Walk/0002.png" id="2_xq7bk"]
+[ext_resource type="Texture2D" uid="uid://cfuqnhpwl36i7" path="res://Personnages/Fermier/Frames/Walk/0003.png" id="3_hf8e4"]
+[ext_resource type="Texture2D" uid="uid://cddunigcnnlrj" path="res://Personnages/Fermier/Frames/Idle/0003.png" id="3_i5fag"]
+[ext_resource type="Texture2D" uid="uid://ca4lujwn7thda" path="res://Personnages/Fermier/Frames/Walk/0004.png" id="4_e3vtj"]
+[ext_resource type="Texture2D" uid="uid://ckgyp8xymx0fh" path="res://Personnages/Fermier/Frames/Idle/0004.png" id="4_t72p2"]
+[ext_resource type="Texture2D" uid="uid://dclid7knk4g0h" path="res://Personnages/Fermier/Frames/Walk/0005.png" id="5_4p17n"]
+[ext_resource type="Texture2D" uid="uid://df6etc5qfevcp" path="res://Personnages/Fermier/Frames/Idle/0005.png" id="5_jvdet"]
+[ext_resource type="Texture2D" uid="uid://jecpnqqbckq1" path="res://Personnages/Fermier/Frames/Idle/0006.png" id="6_layel"]
+[ext_resource type="Texture2D" uid="uid://ci3fgwidu4pd1" path="res://Personnages/Fermier/Frames/Walk/0006.png" id="6_ss038"]
+[ext_resource type="Texture2D" uid="uid://d4eeyctx6fsyx" path="res://Personnages/Fermier/Frames/Walk/0007.png" id="7_mt5dq"]
+[ext_resource type="Texture2D" uid="uid://k6cimc3a5g5r" path="res://Personnages/Fermier/Frames/Idle/0007.png" id="7_nhsm2"]
+[ext_resource type="Texture2D" uid="uid://bj36sx15nlrul" path="res://Personnages/Fermier/Frames/Idle/0008.png" id="8_o4tfl"]
+[ext_resource type="Texture2D" uid="uid://du0u5s442vjr0" path="res://Personnages/Fermier/Frames/Walk/0008.png" id="8_y1the"]
+[ext_resource type="Texture2D" uid="uid://6r88t42o41r2" path="res://Personnages/Fermier/Frames/Walk/0009.png" id="9_dl1k3"]
+[ext_resource type="Texture2D" uid="uid://dascddx85afi2" path="res://Personnages/Fermier/Frames/Idle/0009.png" id="9_fyv53"]
+[ext_resource type="Texture2D" uid="uid://c5kyr17b4ovr1" path="res://Personnages/Fermier/Frames/Idle/0010.png" id="10_sr6vr"]
+[ext_resource type="Texture2D" uid="uid://mxc3t2ur0qta" path="res://Personnages/Fermier/Frames/Walk/0010.png" id="10_wgi2b"]
+[ext_resource type="Texture2D" uid="uid://b1pfhjnk0hl0b" path="res://Personnages/Fermier/Frames/Walk/0011.png" id="11_dccwy"]
+[ext_resource type="Texture2D" uid="uid://xecp2uq35qpi" path="res://Personnages/Fermier/Frames/Idle/0011.png" id="11_ngijn"]
+[ext_resource type="Texture2D" uid="uid://b30nnaybpki0r" path="res://Personnages/Fermier/Frames/Idle/0012.png" id="12_380ot"]
+[ext_resource type="Texture2D" uid="uid://bt110wdwk0c1p" path="res://Personnages/Fermier/Frames/Walk/0012.png" id="12_k6rqv"]
+[ext_resource type="Texture2D" uid="uid://d2dgrwt5pjp7n" path="res://Personnages/Fermier/Frames/Idle/0013.png" id="13_2pryx"]
+[ext_resource type="Texture2D" uid="uid://yxu11jdpubfd" path="res://Personnages/Fermier/Frames/Walk/0013.png" id="13_kofub"]
+[ext_resource type="Texture2D" uid="uid://brh3xqmd3sxcq" path="res://Personnages/Fermier/Frames/Idle/0014.png" id="14_nhg4t"]
+[ext_resource type="Texture2D" uid="uid://dj761lgtydj2b" path="res://Personnages/Fermier/Frames/Walk/0014.png" id="14_o4x1o"]
+[ext_resource type="Texture2D" uid="uid://c3tl7g2mqgbtt" path="res://Personnages/Fermier/Frames/Idle/0015.png" id="15_2j7cy"]
+[ext_resource type="Texture2D" uid="uid://dmw5afpnbgnsf" path="res://Personnages/Fermier/Frames/Walk/0015.png" id="15_vsbt7"]
+[ext_resource type="Texture2D" uid="uid://cai6s3gfrow4c" path="res://Personnages/Fermier/Frames/Idle/0016.png" id="16_gcdrp"]
+[ext_resource type="Texture2D" uid="uid://cm7nyyqw26j33" path="res://Personnages/Fermier/Frames/Walk/0016.png" id="16_s6j0r"]
+[ext_resource type="Texture2D" uid="uid://ncp0kmffiuis" path="res://Personnages/Fermier/Frames/Walk/0017.png" id="17_tmr0v"]
+[ext_resource type="Texture2D" uid="uid://cfvttqtrn4ipc" path="res://Personnages/Fermier/Frames/Idle/0017.png" id="17_vycv3"]
+[ext_resource type="Texture2D" uid="uid://bn57wwyiygubd" path="res://Personnages/Fermier/Frames/Walk/0018.png" id="18_i1jc2"]
+[ext_resource type="Texture2D" uid="uid://dc43g14fh0b5j" path="res://Personnages/Fermier/Frames/Idle/0018.png" id="18_up35v"]
+[ext_resource type="Texture2D" uid="uid://b68eyxv68k3re" path="res://Personnages/Fermier/Frames/Idle/0019.png" id="19_cgpyw"]
+[ext_resource type="Texture2D" uid="uid://blfjxvije412s" path="res://Personnages/Fermier/Frames/Walk/0019.png" id="19_qruwu"]
+[ext_resource type="Texture2D" uid="uid://dnk40ruxamujk" path="res://Personnages/Fermier/Frames/Idle/0020.png" id="20_2r6l8"]
+[ext_resource type="Texture2D" uid="uid://dfbov2bgw1cdb" path="res://Personnages/Fermier/Frames/Walk/0020.png" id="20_fpsk4"]
+[ext_resource type="Texture2D" uid="uid://dvu6l18l8hluy" path="res://Personnages/Fermier/Frames/Walk/0021.png" id="21_277at"]
+[ext_resource type="Texture2D" uid="uid://ce6h5e6kh8fyf" path="res://Personnages/Fermier/Frames/Walk/0022.png" id="22_brnu5"]
+[ext_resource type="Texture2D" uid="uid://bgtmgvars6qnc" path="res://Personnages/Fermier/Frames/Walk/0023.png" id="23_4fus1"]
+[ext_resource type="Texture2D" uid="uid://duugymplfdyd6" path="res://Personnages/Fermier/Frames/Walk/0024.png" id="24_any1a"]
+[ext_resource type="Texture2D" uid="uid://4al1mgbffyem" path="res://Personnages/Fermier/Frames/Walk/0025.png" id="25_yj35y"]
+[ext_resource type="Texture2D" uid="uid://d38np265ywfcs" path="res://Personnages/Fermier/Frames/Walk/0026.png" id="26_dscja"]
+[ext_resource type="Texture2D" uid="uid://dhh7h3lejw8h4" path="res://Personnages/Fermier/Frames/Walk/0027.png" id="27_s0d7u"]
+[ext_resource type="Texture2D" uid="uid://cyca4qlcy3arj" path="res://Personnages/Fermier/Frames/Walk/0028.png" id="28_heklq"]
+[ext_resource type="Texture2D" uid="uid://skdydkvajg8u" path="res://Personnages/Fermier/Frames/Walk/0029.png" id="29_p7dv0"]
+[ext_resource type="Texture2D" uid="uid://dcb3ndvft25qa" path="res://Personnages/Fermier/Frames/Walk/0030.png" id="30_t6xe6"]
+[ext_resource type="Texture2D" uid="uid://c8f0gnifdfokc" path="res://Personnages/Fermier/Frames/Walk/0031.png" id="31_w0ls1"]
+[ext_resource type="Texture2D" uid="uid://c1jtuohj8bksy" path="res://Personnages/Fermier/Frames/Walk/0032.png" id="32_q8rb3"]
+[ext_resource type="Texture2D" uid="uid://dkgjtl1cdy53l" path="res://Personnages/Fermier/Frames/Walk/0033.png" id="33_jdoqe"]
+[ext_resource type="Texture2D" uid="uid://bu421noa78q8u" path="res://Personnages/Fermier/Frames/Walk/0034.png" id="34_tdubb"]
+[ext_resource type="Texture2D" uid="uid://cpnjr62ef7p8x" path="res://Personnages/Fermier/Frames/Walk/0035.png" id="35_qhs33"]
+[ext_resource type="Texture2D" uid="uid://o5itw28qd3tf" path="res://Personnages/Fermier/Frames/Walk/0036.png" id="36_nug0s"]
+[ext_resource type="Texture2D" uid="uid://byml4s107k4dc" path="res://Personnages/Fermier/Frames/Walk/0037.png" id="37_vl6ng"]
+[ext_resource type="Texture2D" uid="uid://beakcp83r2ssn" path="res://Personnages/Fermier/Frames/Walk/0038.png" id="38_hi2yn"]
+[ext_resource type="Texture2D" uid="uid://1vx20uxcrd6l" path="res://Personnages/Fermier/Frames/Walk/0039.png" id="39_g5hvj"]
+[ext_resource type="Texture2D" uid="uid://tqtb2o44fac2" path="res://Personnages/Fermier/Frames/Walk/0040.png" id="40_n50wm"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ow3vn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t2eux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i5fag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t72p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jvdet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_layel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nhsm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_o4tfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fyv53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sr6vr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ngijn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_380ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2pryx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nhg4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2j7cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gcdrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vycv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_up35v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_cgpyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2r6l8")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lb8yw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xq7bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hf8e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_e3vtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4p17n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ss038")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mt5dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_y1the")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dl1k3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wgi2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dccwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_k6rqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kofub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o4x1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vsbt7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_s6j0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tmr0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i1jc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qruwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fpsk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_277at")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_brnu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4fus1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_any1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yj35y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_dscja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_s0d7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_heklq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_p7dv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_t6xe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_w0ls1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_q8rb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_jdoqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_tdubb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_qhs33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_nug0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_vl6ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_hi2yn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_g5hvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_n50wm")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 25.0
+}]
