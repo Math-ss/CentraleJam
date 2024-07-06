@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://davcfs5v8eutx"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_5bfu8"]
+[ext_resource type="Script" path="res://Personnages/Animal.gd" id="2_wp47r"]
+
+[node name="Animal" instance=ExtResource("1_5bfu8")]
+script = ExtResource("2_wp47r")
+pourcentageStatique = 0.2
+distanceMoyenne = 50.0
+distanceVariance = 5.0
+attenteMoyenne = 50.0
+attenteVariance = 5.0
+
+[node name="SoundTimer" type="Timer" parent="." index="3"]
+one_shot = true
+
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="timeout" from="SoundTimer" to="." method="_on_sound_timer_timeout"]

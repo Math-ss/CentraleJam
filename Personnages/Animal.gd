@@ -8,10 +8,19 @@ enum ModeBrownien {DISABLE, WALK, IDLE}
 @export var distanceMoyenne : float = 50
 @export var distanceVariance : float = 5
 
+@export_group("Son aléatoire")
+@export var attenteMoyenne : float = 50
+@export var attenteVariance : float = 5
+
 var _mvtB_mode : ModeBrownien = ModeBrownien.WALK
 var _mvtB_remaining = 0.0
+var _rdS_enable = true
 
 ##Private methods
+
+func _renew_sound():
+    $SoundTimer.wait_time = randfn(attenteMoyenne, attenteVariance)
+    $SoundTimer.start()
 
 func _renew_brownien():
     _mvtB_mode = ModeBrownien.WALK if randf() > pourcentageStatique else ModeBrownien.IDLE        
@@ -24,11 +33,14 @@ func _rebounce_descartes(collision : KinematicCollision2D):
 
 ## Public methods
 
-func start_mvt_brownien():
+func start_rd_behavior():
     _renew_brownien()
+    _rdS_enable = true
+    _renew_sound()
 
-func stop_mvt_brownien():
+func stop_rd_behavior():
     _mvtB_mode = ModeBrownien.DISABLE
+    _rdS_enable = false
 
 ## Specific signals
 
@@ -42,3 +54,9 @@ func _process(delta):
             stand_idle(velocity)
         
         if _mvtB_remaining < 0.0: _renew_brownien()
+
+func _on_sound_timer_timeout():
+    if _rdS_enable : $AudioStreamPlayer2D.play()
+    
+func _on_audio_stream_player_2d_finished():
+    if _rdS_enable : _renew_sound()

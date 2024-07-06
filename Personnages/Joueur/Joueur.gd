@@ -49,6 +49,7 @@ func switch_costume(new_costume : Costume):
 #TODO : Specific behavior
 func _unhandled_key_input(event):
 	if event.is_action_pressed("make_noise"):
+		$AudioStreamPlayer2D.play()
 		switch_costume((_current_costume + 1) % 5)
 
 func _enter_tree(): #To avoid cyclic depedency

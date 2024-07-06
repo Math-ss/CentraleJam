@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bopw0sa1cdg4p"]
 
-[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_421am"]
+[ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_421am"]
 [ext_resource type="SpriteFrames" uid="uid://7a4oiy08pqu7" path="res://Personnages/Cochon/CochonFrames.tres" id="2_rghnw"]
 [ext_resource type="Script" path="res://Personnages/Animal.gd" id="2_xql62"]
 
@@ -12,5 +12,10 @@ position = Vector2(0, -2)
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = ExtResource("2_rghnw")
-animation = &"Walk"
-frame_progress = 0.127356
+
+[node name="AnimatedSprite2D-Mud" type="AnimatedSprite2D" parent="." index="4"]
+
+[node name="MudTimer" type="Timer" parent="." index="5"]
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="MudTimer" to="." method="_on_mud_timer_timeout"]

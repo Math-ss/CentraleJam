@@ -1,13 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dorwtbivsnapb"]
+[gd_scene load_steps=5 format=3 uid="uid://dorwtbivsnapb"]
 
 [ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_nvl1o"]
-[ext_resource type="SpriteFrames" uid="uid://bc18spv4iwemn" path="res://Personnages/Mouton/MoutonFrames.tres" id="2_4ltul"]
 [ext_resource type="Script" path="res://Personnages/Joueur/Joueur.gd" id="2_cihgd"]
+[ext_resource type="SpriteFrames" uid="uid://y58fjrsj7hms" path="res://Personnages/Joueur/JoueurFrames.tres" id="3_nnoqu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_437qn"]
+radius = 76.0
 
 [node name="Joueur" instance=ExtResource("1_nvl1o")]
 script = ExtResource("2_cihgd")
 
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_437qn")
+
 [node name="AnimatedSprite2D" parent="." index="1"]
-sprite_frames = ExtResource("2_4ltul")
+sprite_frames = ExtResource("3_nnoqu")
+animation = &"Walk"
+frame_progress = 0.479989
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]

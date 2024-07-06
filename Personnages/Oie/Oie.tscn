@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://fxkrdklbnsn4"]
 
-[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_4e4ba"]
+[ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_4e4ba"]
 [ext_resource type="SpriteFrames" uid="uid://i7o44w7frtpt" path="res://Personnages/Oie/OieFrames.tres" id="2_8faxi"]
 [ext_resource type="Script" path="res://Personnages/Animal.gd" id="2_ntfps"]
 
