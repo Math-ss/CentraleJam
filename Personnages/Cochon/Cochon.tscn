@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://bopw0sa1cdg4p"]
 
 [ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_421am"]
+[ext_resource type="Script" path="res://Personnages/Cochon/Cochon.gd" id="2_i43kg"]
 [ext_resource type="SpriteFrames" uid="uid://7a4oiy08pqu7" path="res://Personnages/Cochon/CochonFrames.tres" id="2_rghnw"]
-[ext_resource type="Script" path="res://Personnages/Animal.gd" id="2_xql62"]
 
 [node name="Cochon" instance=ExtResource("1_421am")]
-script = ExtResource("2_xql62")
+script = ExtResource("2_i43kg")
 
 [node name="CollisionShape2D" parent="." index="0"]
 position = Vector2(0, -2)

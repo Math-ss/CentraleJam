@@ -12,13 +12,14 @@ enum ModeBrownien {DISABLE, WALK, IDLE}
 @export var attenteMoyenne : float = 50
 @export var attenteVariance : float = 5
 
-var _mvtB_mode : ModeBrownien = ModeBrownien.WALK
+var _mvtB_mode : ModeBrownien = ModeBrownien.DISABLE
 var _mvtB_remaining = 0.0
-var _rdS_enable = true
+var _rdS_enable = false
 
 ##Private methods
 
 func _renew_sound():
+    _rdS_enable = true
     $SoundTimer.wait_time = randfn(attenteMoyenne, attenteVariance)
     $SoundTimer.start()
 
@@ -35,7 +36,6 @@ func _rebounce_descartes(collision : KinematicCollision2D):
 
 func start_rd_behavior():
     _renew_brownien()
-    _rdS_enable = true
     _renew_sound()
 
 func stop_rd_behavior():
@@ -43,6 +43,9 @@ func stop_rd_behavior():
     _rdS_enable = false
 
 ## Specific signals
+
+func _ready(): 
+    start_rd_behavior()
 
 func _process(delta):
     if _mvtB_mode != ModeBrownien.DISABLE :
