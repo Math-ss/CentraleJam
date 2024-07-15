@@ -14,5 +14,7 @@ func stand_idle(direction : Vector2 = Vector2.ZERO):
     $AnimatedSprite2D.play(&"Idle")
     if direction != Vector2.ZERO : rotation = direction.angle() + PI/2
 
-#TODO : Sound
+# Managment
 
+func getLevelManager():
+    return get_tree().root.get_child(0)

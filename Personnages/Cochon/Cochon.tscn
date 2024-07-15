@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bopw0sa1cdg4p"]
+[gd_scene load_steps=5 format=3 uid="uid://bopw0sa1cdg4p"]
 
 [ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_421am"]
 [ext_resource type="Script" path="res://Personnages/Cochon/Cochon.gd" id="2_i43kg"]
 [ext_resource type="SpriteFrames" uid="uid://7a4oiy08pqu7" path="res://Personnages/Cochon/CochonFrames.tres" id="2_rghnw"]
+[ext_resource type="SpriteFrames" uid="uid://d2vfwloeebvxu" path="res://Personnages/Cochon/CochonMudFrames.tres" id="4_bc5ab"]
 
 [node name="Cochon" instance=ExtResource("1_421am")]
 script = ExtResource("2_i43kg")
@@ -14,6 +15,7 @@ position = Vector2(0, -2)
 sprite_frames = ExtResource("2_rghnw")
 
 [node name="AnimatedSprite2D-Mud" type="AnimatedSprite2D" parent="." index="4"]
+sprite_frames = ExtResource("4_bc5ab")
 
 [node name="MudTimer" type="Timer" parent="." index="5"]
 

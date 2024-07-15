@@ -1,8 +1,6 @@
 extends Animal
 class_name Mouton
 
-static var _sheep_in_scene : Array[Mouton] = []
-
 var _mvtF_enable = false
 var _mvtF_leader : Mouton = null
 var _mvtF_remaining : float = 0.0
@@ -10,14 +8,12 @@ var _mvtF_remaining : float = 0.0
 signal follow_leader(leader : Mouton, duration : float)
 
 func _enter_tree():
-    for sheep in _sheep_in_scene:
-        sheep.follow_leader.connect(_on_follow_leader)
-    _sheep_in_scene.append(self)
+    getLevelManager().sheep_follow_leader.connect(_on_follow_leader)
+    getLevelManager().sheepArray.push_back(self)
 
 func _exit_tree():
-    _sheep_in_scene.remove_at(_sheep_in_scene.find(self))
-    for sheep in _sheep_in_scene:
-        sheep.follow_leader.disconnect(_on_follow_leader)
+    getLevelManager().sheep_follow_leader.disconnect(_on_follow_leader)
+    getLevelManager().sheepArray.remove_at(getLevelManager().sheepArray.find(self))
 
 func _process(delta):
     super(delta)
@@ -39,5 +35,3 @@ func _on_follow_leader(leader : Mouton, duration : float):
     _mvtF_enable = true
     _mvtF_leader = leader
     _mvtF_remaining = duration
-
-#TODO : How to trigger this signal ??
