@@ -1,8 +1,9 @@
 extends Node2D
 class_name  LevelManager
 
-signal sheep_follow_leader(leader : Mouton, duration : float)
-signal goose_follow_leader(durationAVG : float, durationVAR : float)
+signal sheep_follow_leader_start(leader : Mouton, duration : float)
+signal sheep_follow_leader_stop(leader : Mouton, duration : float)
+signal goose_repeat_leader(durationAVG : float, durationVAR : float)
 
 @export_group("Mouton Management")
 @export var moutonTempsMoyen = 0.0
@@ -28,12 +29,12 @@ var _timerGoose = -1.0
 
 func _start_sheep_leading():
     _timerMouton = randfn(moutonTempsMoyen, moutonTempsVariance)
-    sheep_follow_leader.emit(sheepArray.pick_random(), _timerMouton)
+    sheep_follow_leader_start.emit(sheepArray.pick_random(), _timerMouton)
     _timerMouton *= moutonTempsMultiplicateur
 
 func _start_goose_leading():
     _timerGoose = randfn(moutonTempsMoyen, moutonTempsVariance)
-    goose_follow_leader.emit(oieReponseMoyen, oieReponseVariance)
+    goose_repeat_leader.emit(oieReponseMoyen, oieReponseVariance)
 
 ## Specific signals
 
