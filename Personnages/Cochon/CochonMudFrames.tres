@@ -1,0 +1,295 @@
+[gd_resource type="SpriteFrames" load_steps=71 format=3 uid="uid://d2vfwloeebvxu"]
+
+[ext_resource type="Texture2D" uid="uid://bvyqjoi5a8n1d" path="res://Personnages/Cochon/Frames/Idle-Boue/0001.png" id="1_0o3xs"]
+[ext_resource type="Texture2D" uid="uid://t6nyjjk5h8j7" path="res://Personnages/Cochon/Frames/Walk-Boue/0001.png" id="1_mwl1b"]
+[ext_resource type="Texture2D" uid="uid://lehcw777wb3p" path="res://Personnages/Cochon/Frames/Walk-Boue/0002.png" id="2_03u5q"]
+[ext_resource type="Texture2D" uid="uid://c2auh20uxj6d8" path="res://Personnages/Cochon/Frames/Idle-Boue/0002.png" id="2_8motj"]
+[ext_resource type="Texture2D" uid="uid://1sqdplfm2q5e" path="res://Personnages/Cochon/Frames/Walk-Boue/0003.png" id="3_bslrl"]
+[ext_resource type="Texture2D" uid="uid://e7e73qsa55q6" path="res://Personnages/Cochon/Frames/Idle-Boue/0003.png" id="3_k02fm"]
+[ext_resource type="Texture2D" uid="uid://bnp3mjad5jshy" path="res://Personnages/Cochon/Frames/Idle-Boue/0004.png" id="4_gl5lu"]
+[ext_resource type="Texture2D" uid="uid://ciy20kww3be41" path="res://Personnages/Cochon/Frames/Walk-Boue/0004.png" id="4_wh40a"]
+[ext_resource type="Texture2D" uid="uid://mbx4oa46kcsq" path="res://Personnages/Cochon/Frames/Walk-Boue/0005.png" id="5_03ahg"]
+[ext_resource type="Texture2D" uid="uid://1mnny32rw0gc" path="res://Personnages/Cochon/Frames/Idle-Boue/0005.png" id="5_eeylq"]
+[ext_resource type="Texture2D" uid="uid://0j7bsjxa2fd3" path="res://Personnages/Cochon/Frames/Walk-Boue/0006.png" id="6_kpl2j"]
+[ext_resource type="Texture2D" uid="uid://ddjorijdgtsqg" path="res://Personnages/Cochon/Frames/Idle-Boue/0006.png" id="6_mk58g"]
+[ext_resource type="Texture2D" uid="uid://d2u8jtby65qqb" path="res://Personnages/Cochon/Frames/Walk-Boue/0007.png" id="7_a3cta"]
+[ext_resource type="Texture2D" uid="uid://buepi47q10sp3" path="res://Personnages/Cochon/Frames/Idle-Boue/0007.png" id="7_nrcoc"]
+[ext_resource type="Texture2D" uid="uid://dy45y7qa30oo6" path="res://Personnages/Cochon/Frames/Walk-Boue/0008.png" id="8_c56in"]
+[ext_resource type="Texture2D" uid="uid://dsgjxb04dvkbq" path="res://Personnages/Cochon/Frames/Idle-Boue/0008.png" id="8_ibbcc"]
+[ext_resource type="Texture2D" uid="uid://nygvpmojyccv" path="res://Personnages/Cochon/Frames/Walk-Boue/0009.png" id="9_ioe16"]
+[ext_resource type="Texture2D" uid="uid://cun768p4u0ytd" path="res://Personnages/Cochon/Frames/Idle-Boue/0009.png" id="9_kjdgr"]
+[ext_resource type="Texture2D" uid="uid://glc2qdvy3i21" path="res://Personnages/Cochon/Frames/Idle-Boue/0010.png" id="10_40y03"]
+[ext_resource type="Texture2D" uid="uid://0j3dpkhdnqbj" path="res://Personnages/Cochon/Frames/Walk-Boue/0010.png" id="10_gm54t"]
+[ext_resource type="Texture2D" uid="uid://c8rcwnardpydg" path="res://Personnages/Cochon/Frames/Idle-Boue/0011.png" id="11_i4fat"]
+[ext_resource type="Texture2D" uid="uid://cvardui8okd6f" path="res://Personnages/Cochon/Frames/Walk-Boue/0011.png" id="11_wxni2"]
+[ext_resource type="Texture2D" uid="uid://dg6k7gw3fwvsh" path="res://Personnages/Cochon/Frames/Idle-Boue/0012.png" id="12_a4021"]
+[ext_resource type="Texture2D" uid="uid://ddq4fg0emcgcd" path="res://Personnages/Cochon/Frames/Walk-Boue/0012.png" id="12_dvfw0"]
+[ext_resource type="Texture2D" uid="uid://bslrgt7i76mw6" path="res://Personnages/Cochon/Frames/Walk-Boue/0013.png" id="13_dyxhf"]
+[ext_resource type="Texture2D" uid="uid://cadsaay1nund6" path="res://Personnages/Cochon/Frames/Idle-Boue/0013.png" id="13_o22k7"]
+[ext_resource type="Texture2D" uid="uid://6wj1n8cc4xk5" path="res://Personnages/Cochon/Frames/Idle-Boue/0014.png" id="14_i2bok"]
+[ext_resource type="Texture2D" uid="uid://kp0sax7nmy1j" path="res://Personnages/Cochon/Frames/Walk-Boue/0014.png" id="14_oebcp"]
+[ext_resource type="Texture2D" uid="uid://wwd7ohdj2f65" path="res://Personnages/Cochon/Frames/Idle-Boue/0015.png" id="15_pj837"]
+[ext_resource type="Texture2D" uid="uid://bely804mj0d8q" path="res://Personnages/Cochon/Frames/Walk-Boue/0015.png" id="15_sl6wq"]
+[ext_resource type="Texture2D" uid="uid://cxlx4flas3m3p" path="res://Personnages/Cochon/Frames/Walk-Boue/0016.png" id="16_8xmdx"]
+[ext_resource type="Texture2D" uid="uid://d20t43fscbxrb" path="res://Personnages/Cochon/Frames/Idle-Boue/0016.png" id="16_breqx"]
+[ext_resource type="Texture2D" uid="uid://7pdvcls01fcx" path="res://Personnages/Cochon/Frames/Idle-Boue/0017.png" id="17_4pr1l"]
+[ext_resource type="Texture2D" uid="uid://ds8qphtrmwmwc" path="res://Personnages/Cochon/Frames/Walk-Boue/0017.png" id="17_13hh6"]
+[ext_resource type="Texture2D" uid="uid://1fg4svxjpq5o" path="res://Personnages/Cochon/Frames/Idle-Boue/0018.png" id="18_2drgh"]
+[ext_resource type="Texture2D" uid="uid://dy235okl0htu5" path="res://Personnages/Cochon/Frames/Walk-Boue/0018.png" id="18_4ipj8"]
+[ext_resource type="Texture2D" uid="uid://bnxyxecsawfo5" path="res://Personnages/Cochon/Frames/Idle-Boue/0019.png" id="19_8gst7"]
+[ext_resource type="Texture2D" uid="uid://41qwgmlqk7lq" path="res://Personnages/Cochon/Frames/Walk-Boue/0019.png" id="19_tgn0e"]
+[ext_resource type="Texture2D" uid="uid://cupr7hy3p51rw" path="res://Personnages/Cochon/Frames/Idle-Boue/0020.png" id="20_2w2qb"]
+[ext_resource type="Texture2D" uid="uid://v5r2lxee2vmc" path="res://Personnages/Cochon/Frames/Walk-Boue/0020.png" id="20_sw0nq"]
+[ext_resource type="Texture2D" uid="uid://nf1f5neag6ki" path="res://Personnages/Cochon/Frames/Walk-Boue/0021.png" id="21_r1wm3"]
+[ext_resource type="Texture2D" uid="uid://deum4urp2b0a0" path="res://Personnages/Cochon/Frames/Idle-Boue/0021.png" id="21_uf3wg"]
+[ext_resource type="Texture2D" uid="uid://dkilh8tqovv10" path="res://Personnages/Cochon/Frames/Idle-Boue/0022.png" id="22_4ml15"]
+[ext_resource type="Texture2D" uid="uid://dw2uieotn6yh4" path="res://Personnages/Cochon/Frames/Walk-Boue/0022.png" id="22_4s81x"]
+[ext_resource type="Texture2D" uid="uid://dd5h02vd2wjjy" path="res://Personnages/Cochon/Frames/Idle-Boue/0023.png" id="23_qfhkv"]
+[ext_resource type="Texture2D" uid="uid://ckshxpdf6iy16" path="res://Personnages/Cochon/Frames/Walk-Boue/0023.png" id="23_r6vip"]
+[ext_resource type="Texture2D" uid="uid://byocjn2jpjr52" path="res://Personnages/Cochon/Frames/Idle-Boue/0024.png" id="24_baobn"]
+[ext_resource type="Texture2D" uid="uid://c754grmq2awm" path="res://Personnages/Cochon/Frames/Walk-Boue/0024.png" id="24_ihvyh"]
+[ext_resource type="Texture2D" uid="uid://tutcaydkt4n1" path="res://Personnages/Cochon/Frames/Walk-Boue/0025.png" id="25_vktbc"]
+[ext_resource type="Texture2D" uid="uid://m223hcrgthfy" path="res://Personnages/Cochon/Frames/Idle-Boue/0025.png" id="25_yl4p0"]
+[ext_resource type="Texture2D" uid="uid://cbkvrufskelco" path="res://Personnages/Cochon/Frames/Walk-Boue/0026.png" id="26_p860p"]
+[ext_resource type="Texture2D" uid="uid://bfjf2ljkneiue" path="res://Personnages/Cochon/Frames/Idle-Boue/0026.png" id="26_wbehx"]
+[ext_resource type="Texture2D" uid="uid://d0hghncqgy765" path="res://Personnages/Cochon/Frames/Idle-Boue/0027.png" id="27_wodqj"]
+[ext_resource type="Texture2D" uid="uid://0dk2i7dxcydr" path="res://Personnages/Cochon/Frames/Walk-Boue/0027.png" id="27_xsw31"]
+[ext_resource type="Texture2D" uid="uid://cnhji1fa15jv5" path="res://Personnages/Cochon/Frames/Idle-Boue/0028.png" id="28_lce5y"]
+[ext_resource type="Texture2D" uid="uid://mf7m6wbbocnv" path="res://Personnages/Cochon/Frames/Walk-Boue/0028.png" id="28_m6gie"]
+[ext_resource type="Texture2D" uid="uid://d3fv4xsrgfaeu" path="res://Personnages/Cochon/Frames/Idle-Boue/0029.png" id="29_j6wu8"]
+[ext_resource type="Texture2D" uid="uid://chg5yunmtqc8q" path="res://Personnages/Cochon/Frames/Walk-Boue/0029.png" id="29_ub3bp"]
+[ext_resource type="Texture2D" uid="uid://cixikub52yj0y" path="res://Personnages/Cochon/Frames/Walk-Boue/0030.png" id="30_7tk4s"]
+[ext_resource type="Texture2D" uid="uid://dyluf8rww6bds" path="res://Personnages/Cochon/Frames/Idle-Boue/0030.png" id="30_m7gks"]
+[ext_resource type="Texture2D" uid="uid://i4d6ifqpdvid" path="res://Personnages/Cochon/Frames/Walk-Boue/0031.png" id="31_b1xvj"]
+[ext_resource type="Texture2D" uid="uid://blodi2qath2h6" path="res://Personnages/Cochon/Frames/Walk-Boue/0032.png" id="32_134fv"]
+[ext_resource type="Texture2D" uid="uid://bqym6fu7jjuwb" path="res://Personnages/Cochon/Frames/Walk-Boue/0033.png" id="33_ayjyd"]
+[ext_resource type="Texture2D" uid="uid://dvc68e1rvh6p2" path="res://Personnages/Cochon/Frames/Walk-Boue/0034.png" id="34_agj4w"]
+[ext_resource type="Texture2D" uid="uid://2exgg2fisqma" path="res://Personnages/Cochon/Frames/Walk-Boue/0035.png" id="35_hmnui"]
+[ext_resource type="Texture2D" uid="uid://bfhcynvs2sfpn" path="res://Personnages/Cochon/Frames/Walk-Boue/0036.png" id="36_pmvxj"]
+[ext_resource type="Texture2D" uid="uid://bi6aaevf71jhr" path="res://Personnages/Cochon/Frames/Walk-Boue/0037.png" id="37_ikc08"]
+[ext_resource type="Texture2D" uid="uid://deh250oe7gyjl" path="res://Personnages/Cochon/Frames/Walk-Boue/0038.png" id="38_48gam"]
+[ext_resource type="Texture2D" uid="uid://dfke1af64jnf4" path="res://Personnages/Cochon/Frames/Walk-Boue/0039.png" id="39_1qfsi"]
+[ext_resource type="Texture2D" uid="uid://dsilfvevqymhm" path="res://Personnages/Cochon/Frames/Walk-Boue/0040.png" id="40_3i45a"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0o3xs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8motj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_k02fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gl5lu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eeylq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mk58g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nrcoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ibbcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_kjdgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_40y03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i4fat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_a4021")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o22k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i2bok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pj837")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_breqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4pr1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2drgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8gst7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2w2qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_uf3wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4ml15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qfhkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_baobn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yl4p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_wbehx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wodqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_lce5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_j6wu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_m7gks")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mwl1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_03u5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bslrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wh40a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_03ahg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kpl2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a3cta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c56in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ioe16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gm54t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wxni2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dvfw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dyxhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oebcp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sl6wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8xmdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_13hh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4ipj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_tgn0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_sw0nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_r1wm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4s81x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_r6vip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ihvyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vktbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_p860p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xsw31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_m6gie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ub3bp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7tk4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_b1xvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_134fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ayjyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_agj4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_hmnui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pmvxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ikc08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_48gam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_1qfsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_3i45a")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 20.0
+}]

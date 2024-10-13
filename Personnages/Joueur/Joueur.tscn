@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://dorwtbivsnapb"]
+
+[ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_nvl1o"]
+[ext_resource type="Script" path="res://Personnages/Joueur/Joueur.gd" id="2_cihgd"]
+[ext_resource type="SpriteFrames" uid="uid://y58fjrsj7hms" path="res://Personnages/Joueur/JoueurFrames.tres" id="3_nnoqu"]
+[ext_resource type="BitMap" uid="uid://ohaltt1v3g10" path="res://Personnages/Joueur/Frames/BitMaskPerso.png" id="4_yujnw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_437qn"]
+radius = 76.0
+
+[node name="Joueur" instance=ExtResource("1_nvl1o")]
+script = ExtResource("2_cihgd")
+attenteCochon = 5.0
+dureeDashCochon = 5.0
+multVitesseCochon = 2.0
+attenteVache = 5.0
+attenteOie = 5.0
+attenteMouton = 5.0
+dureeSuiviMouton = 5.0
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 7)
+shape = SubResource("CircleShape2D_437qn")
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("3_nnoqu")
+animation = &"Walk"
+
+[node name="Camera2D" type="Camera2D" parent="." index="3"]
+
+[node name="SelectionButton" type="TextureButton" parent="." index="4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.0
+offset_top = -189.0
+offset_right = 189.0
+offset_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_click_mask = ExtResource("4_yujnw")
+
+[node name="SpeTimer" type="Timer" parent="." index="5"]
+
+[connection signal="pressed" from="SelectionButton" to="." method="_on_selection_button_pressed"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://do86jgrv8s8df"]
+
+[ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_hvh2o"]
+[ext_resource type="SpriteFrames" uid="uid://bc18spv4iwemn" path="res://Personnages/Mouton/MoutonFrames.tres" id="2_hxw1h"]
+
+[node name="Mouton" instance=ExtResource("1_hvh2o")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 10)
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_hxw1h")

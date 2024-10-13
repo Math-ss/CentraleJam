@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://fxkrdklbnsn4"]
+
+[ext_resource type="PackedScene" uid="uid://davcfs5v8eutx" path="res://Personnages/Animal.tscn" id="1_4e4ba"]
+[ext_resource type="Script" path="res://Personnages/Oie/Oie.gd" id="2_2ftpy"]
+[ext_resource type="SpriteFrames" uid="uid://i7o44w7frtpt" path="res://Personnages/Oie/OieFrames.tres" id="2_8faxi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2ddgf"]
+radius = 60.0
+height = 230.0
+
+[node name="Oie" instance=ExtResource("1_4e4ba")]
+script = ExtResource("2_2ftpy")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CapsuleShape2D_2ddgf")
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = ExtResource("2_8faxi")
+animation = &"Walk"
+
+[node name="FollowTimer" type="Timer" parent="." index="4"]
+one_shot = true
+
+[connection signal="timeout" from="FollowTimer" to="." method="_on_follow_timer_timeout"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ohaltt1v3g10"
+path="res://.godot/imported/BitMaskPerso.png-eec40a224dcf0b3432233a2239f32962.res"
+
+[deps]
+
+source_file="res://Personnages/Joueur/Frames/BitMaskPerso.png"
+dest_files=["res://.godot/imported/BitMaskPerso.png-eec40a224dcf0b3432233a2239f32962.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
