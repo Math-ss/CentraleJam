@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://dii1gjr8etifs"]
+
+[ext_resource type="Script" path="res://Interface/HUD/hud.gd" id="1_5yjmk"]
+[ext_resource type="Theme" uid="uid://bkebleuscyj7d" path="res://Interface/assets/test.tres" id="2_85en5"]
+[ext_resource type="Texture2D" uid="uid://88t1k0j0sq4b" path="res://Interface/assets/setting.png" id="3_s2fgi"]
+[ext_resource type="Texture2D" uid="uid://bvwhmscn4o078" path="res://Interface/assets/play.png" id="4_3ovog"]
+[ext_resource type="Script" path="res://Interface/HUD/playpausebutton.gd" id="5_eeqdr"]
+[ext_resource type="Texture2D" uid="uid://0dpkpmvy0xia" path="res://Interface/assets/checked.png" id="6_mfvw2"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_5yjmk")
+
+[node name="TimeLeft" type="Timer" parent="."]
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="MessageTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="StartButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.5
+offset_top = -15.5
+offset_right = 22.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_85en5")
+theme_override_font_sizes/font_size = 35
+text = "Start"
+
+[node name="SettingsButton" type="Button" parent="."]
+offset_left = 416.0
+offset_right = 480.0
+offset_bottom = 64.0
+icon = ExtResource("3_s2fgi")
+expand_icon = true
+
+[node name="PlayPauseButton" type="Button" parent="."]
+offset_right = 64.0
+offset_bottom = 64.0
+icon = ExtResource("4_3ovog")
+expand_icon = true
+script = ExtResource("5_eeqdr")
+
+[node name="CompetenceButton" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.933
+anchor_top = 0.667
+anchor_right = 0.933
+anchor_bottom = 0.667
+offset_left = -63.84
+offset_top = -32.2401
+offset_right = 0.159973
+offset_bottom = 31.7599
+grow_horizontal = 0
+grow_vertical = 2
+icon = ExtResource("6_mfvw2")
+expand_icon = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 35
+text = "scorelabel"
+
+[node name="TimeLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -73.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 35
+text = "timelabel"
+
+[node name="BestScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Message" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.544
+anchor_right = 0.5
+anchor_bottom = 0.544
+offset_left = -32.0
+offset_top = -7.68002
+offset_right = 36.0
+offset_bottom = 15.32
+grow_horizontal = 2
+grow_vertical = 2
+text = "message"
