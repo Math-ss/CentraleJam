@@ -50,6 +50,7 @@ func _enable_specific_ability():
 			_idleAnim = &"Fly"
 			collision_layer = 2
 			collision_mask = 2
+			z_index = 5 #If specific overlapping need to be set in the scene
 
 		Costume.SHEEP :
 			$AudioStreamPlayer2D.play()
@@ -68,6 +69,7 @@ func _disable_specific_ability(force : bool = false) -> bool:
 			_idleAnim = &"Idle"
 			collision_layer = 1
 			collision_mask = 1
+			z_index = 0
 			_speA_enable = false
 
 		Costume.PIG :
@@ -166,8 +168,7 @@ func _process(_delta):
 		walk_and_slide()
 
 func _on_selection_button_pressed():
-	#TODO : Add selection and check its visibility
-	pass
+	$PlayerSelection.visible = true
 
 func _on_spe_timer_timeout(): 
 	if _speA_enable : # When specific abilities with determined time ends

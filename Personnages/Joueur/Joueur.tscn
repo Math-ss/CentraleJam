@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dorwtbivsnapb"]
+[gd_scene load_steps=7 format=3 uid="uid://dorwtbivsnapb"]
 
 [ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_nvl1o"]
 [ext_resource type="Script" path="res://Personnages/Joueur/Joueur.gd" id="2_cihgd"]
 [ext_resource type="SpriteFrames" uid="uid://y58fjrsj7hms" path="res://Personnages/Joueur/JoueurFrames.tres" id="3_nnoqu"]
 [ext_resource type="BitMap" uid="uid://ohaltt1v3g10" path="res://Personnages/Joueur/Frames/BitMaskPerso.png" id="4_yujnw"]
+[ext_resource type="PackedScene" uid="uid://bpgfsxrgd376o" path="res://Interface/PlayerSelection/PlayerSelection.tscn" id="5_d61ov"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_437qn"]
 radius = 76.0
@@ -28,7 +29,10 @@ animation = &"Walk"
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 
-[node name="SelectionButton" type="TextureButton" parent="." index="4"]
+[node name="SpeTimer" type="Timer" parent="." index="4"]
+
+[node name="SelectionButton" type="TextureButton" parent="." index="5"]
+z_index = 10
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -42,6 +46,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_click_mask = ExtResource("4_yujnw")
 
-[node name="SpeTimer" type="Timer" parent="." index="5"]
+[node name="PlayerSelection" parent="." index="6" instance=ExtResource("5_d61ov")]
+visible = false
+z_index = 10
 
 [connection signal="pressed" from="SelectionButton" to="." method="_on_selection_button_pressed"]

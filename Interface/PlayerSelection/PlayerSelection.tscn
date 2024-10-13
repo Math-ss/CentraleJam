@@ -1,0 +1,80 @@
+[gd_scene load_steps=14 format=3 uid="uid://bpgfsxrgd376o"]
+
+[ext_resource type="Texture2D" uid="uid://d26ho0kn4ol7i" path="res://Interface/PlayerSelection/Images/RoueSelection-Vache.png" id="1_p1xn1"]
+[ext_resource type="Script" path="res://Interface/PlayerSelection/PlayerSelection.gd" id="1_qberr"]
+[ext_resource type="Texture2D" uid="uid://cvgsn62gp0vt1" path="res://Interface/PlayerSelection/Images/RoueSelection-Vache-Pressed.png" id="2_dohxu"]
+[ext_resource type="Texture2D" uid="uid://btedjk6hn0022" path="res://Interface/PlayerSelection/Images/RoueSelection-Oie.png" id="3_8vwxu"]
+[ext_resource type="BitMap" uid="uid://ce521c0a28k8k" path="res://Interface/PlayerSelection/Images/RoueSelection-BitMask.png" id="4_gu0j2"]
+[ext_resource type="Texture2D" uid="uid://bx0xeocdr8slg" path="res://Interface/PlayerSelection/Images/RoueSelection-Oie-Pressed.png" id="4_o5vwi"]
+[ext_resource type="Texture2D" uid="uid://y34r1nts2pdn" path="res://Interface/PlayerSelection/Images/RoueSelection-Mouton.png" id="5_yv6fy"]
+[ext_resource type="Texture2D" uid="uid://di5auo88sieif" path="res://Interface/PlayerSelection/Images/RoueSelection-Mouton-Pressed.png" id="6_hrqgd"]
+[ext_resource type="Texture2D" uid="uid://cidaxwuasgua7" path="res://Interface/PlayerSelection/Images/RoueSelection-Coco.png" id="7_rn3jl"]
+[ext_resource type="Texture2D" uid="uid://rd1is7gok3k0" path="res://Interface/PlayerSelection/Images/RoueSelection-Cochon-Pressed.png" id="8_v4vrp"]
+[ext_resource type="Texture2D" uid="uid://c4l4x8asall3c" path="res://Interface/PlayerSelection/Images/RoueSelection-Pinguoin.png" id="9_n4go3"]
+[ext_resource type="Texture2D" uid="uid://0yy0yuyuskbc" path="res://Interface/PlayerSelection/Images/RoueSelection-Pinguoin-Pressed.png" id="10_dwr1u"]
+[ext_resource type="BitMap" uid="uid://8ttwl13ekbsl" path="res://Interface/PlayerSelection/Images/RoueSelection-Center-BitMask.png" id="13_elowm"]
+
+[node name="PlayerSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qberr")
+
+[node name="ButtonCow" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+keep_pressed_outside = true
+texture_normal = ExtResource("1_p1xn1")
+texture_pressed = ExtResource("2_dohxu")
+texture_click_mask = ExtResource("4_gu0j2")
+
+[node name="ButtonGoose" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+rotation = -1.5708
+keep_pressed_outside = true
+texture_normal = ExtResource("3_8vwxu")
+texture_pressed = ExtResource("4_o5vwi")
+texture_click_mask = ExtResource("4_gu0j2")
+
+[node name="ButtonSheep" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+rotation = 3.14159
+keep_pressed_outside = true
+texture_normal = ExtResource("5_yv6fy")
+texture_pressed = ExtResource("6_hrqgd")
+texture_click_mask = ExtResource("4_gu0j2")
+
+[node name="ButtonPig" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+rotation = 1.5708
+keep_pressed_outside = true
+texture_normal = ExtResource("7_rn3jl")
+texture_pressed = ExtResource("8_v4vrp")
+texture_click_mask = ExtResource("4_gu0j2")
+
+[node name="ButtonRaw" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = -102.0
+offset_right = 102.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+keep_pressed_outside = true
+texture_normal = ExtResource("9_n4go3")
+texture_pressed = ExtResource("10_dwr1u")
+texture_click_mask = ExtResource("13_elowm")
+
+[connection signal="pressed" from="ButtonCow" to="." method="_on_button_cow_pressed"]
+[connection signal="pressed" from="ButtonGoose" to="." method="_on_button_goose_pressed"]
+[connection signal="pressed" from="ButtonSheep" to="." method="_on_button_sheep_pressed"]
+[connection signal="pressed" from="ButtonPig" to="." method="_on_button_pig_pressed"]
+[connection signal="pressed" from="ButtonRaw" to="." method="_on_button_raw_pressed"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ce521c0a28k8k"
+path="res://.godot/imported/RoueSelection-BitMask.png-c997c36e8b3068f30a0a9c68ec42f12d.res"
+
+[deps]
+
+source_file="res://Interface/PlayerSelection/Images/RoueSelection-BitMask.png"
+dest_files=["res://.godot/imported/RoueSelection-BitMask.png-c997c36e8b3068f30a0a9c68ec42f12d.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
