@@ -18,6 +18,7 @@ func _exit_tree():
 func _process(delta):
     super(delta)
 
+    # Continuous management of following system
     if _mvtF_enable:
         velocity = vitesse * (_mvtF_leader.global_position - global_position).normalized() #ENH : Speed proportionnate to distance to leader
         _mvtF_remaining -= delta
@@ -30,6 +31,7 @@ func _process(delta):
             start_rd_behavior()
 
 func _on_follow_leader_start(leader : Sprite, duration : float):
+    #Here no check of the previous state : a now call override the previous one
     stop_rd_behavior() #ENH : New sound pattern ?
 
     _mvtF_enable = true
@@ -37,5 +39,6 @@ func _on_follow_leader_start(leader : Sprite, duration : float):
     _mvtF_remaining = duration
 
 func _on_follow_leader_stop(_leader : Sprite = null):
-    _mvtF_enable = false
-    start_rd_behavior()
+    if _mvtF_enable :
+        _mvtF_enable = false
+        start_rd_behavior()

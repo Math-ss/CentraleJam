@@ -13,13 +13,6 @@ stopAbility = ExtResource("3_rdgcs")
 
 [node name="HUD" parent="." instance=ExtResource("2_x7vxg")]
 
-[node name="AbilityButton" parent="HUD" index="1"]
-anchors_preset = 2
-offset_left = 0.0
-offset_top = -75.0
-offset_right = 75.0
-offset_bottom = 0.0
-
 [node name="Joueur" parent="." instance=ExtResource("3_pgcbd")]
 position = Vector2(573, 321)
 scale = Vector2(0.7, 0.7)

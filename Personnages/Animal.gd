@@ -35,8 +35,9 @@ func _rebounce_descartes(collision : KinematicCollision2D):
 ## Public methods
 
 func start_rd_behavior():
-    _renew_brownien()
-    _renew_sound()
+    if _mvtB_mode == ModeBrownien.DISABLE:
+        _renew_brownien()
+        _renew_sound()
 
 func stop_rd_behavior():
     _mvtB_mode = ModeBrownien.DISABLE

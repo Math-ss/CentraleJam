@@ -32,7 +32,7 @@ var sheepArray : Array[Mouton] = []
 var gooseArray : Array[Oie] = []
 
 var _timerMouton = -1.0
-var _timerGoose = -1.0
+var _timerOie = -1.0
 
 ## Private functions
 
@@ -42,10 +42,19 @@ func _start_sheep_leading():
     _timerMouton *= moutonTempsMultiplicateur
 
 func _start_goose_leading():
-    _timerGoose = randfn(moutonTempsMoyen, moutonTempsVariance)
+    _timerOie = randfn(oieAttenteMoyen, oieAttenteVariance)
     goose_repeat_leader.emit(oieReponseMoyen, oieReponseVariance)
 
 ## Public functions
+
+func setFollowSystemState(sheepState : bool, gooseState : bool = true):
+    if gooseState and _timerOie < 0.0: _start_goose_leading()
+    if not gooseState and _timerOie > 0.0 : _timerOie = -1.0
+    if sheepState and _timerMouton < 0.0: _start_sheep_leading()
+
+    if not sheepState and _timerMouton > 0.0 :
+        _timerMouton = -1.0
+        sheep_follow_leader_stop.emit()
 
 func getPlayer() -> Joueur : return $Joueur
 
@@ -82,9 +91,10 @@ func _ready():
     _start_sheep_leading()
 
 func _process(delta):
+    # Following systems' timer
     if _timerMouton > 0.0:
         _timerMouton -= delta
         if _timerMouton <= 0.0 : _start_sheep_leading()
-    if _timerGoose > 0.0:
-        _timerGoose -= delta
-        if _timerGoose <= 0.0 : _start_goose_leading()
+    if _timerOie > 0.0:
+        _timerOie -= delta
+        if _timerOie <= 0.0 : _start_goose_leading()

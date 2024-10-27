@@ -65,6 +65,7 @@ func _enable_specific_ability():
 			getLevelManager().sheep_follow_leader_start.emit(self, INF) #ENH : Maybe call after the sheep stop screaming ?
 			$"SpeTimer".start(dureeSuiviMouton)
 			getLevelManager().setAbilityButtonMode(AbilityButtonMode.USING)
+			getLevelManager().setFollowSystemState(false, true)
 
 func _disable_specific_ability(force : bool = false) -> bool:
 	if not _speA_enable : return false
@@ -92,6 +93,7 @@ func _disable_specific_ability(force : bool = false) -> bool:
 			if force :
 				$SpeTimer.stop()
 				getLevelManager().sheep_follow_leader_stop.emit()
+				getLevelManager().setFollowSystemState(false, true)
 				_speA_enable = false
 
 	return _speA_enable
