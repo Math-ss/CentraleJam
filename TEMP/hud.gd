@@ -53,7 +53,3 @@ func _on_message_timer_timeout():
 func _ready():
 	$PlayPauseButton.set_button_icon(load("path"))
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://cko4wqcgvgrxg"]
+
+[ext_resource type="Script" path="res://GameManagment/LevelManager.gd" id="1_dyd6l"]
+[ext_resource type="Texture2D" uid="uid://dilbukr57elu4" path="res://Interface/HUD/Images/AbilityButton-Start.png" id="2_0v0nb"]
+[ext_resource type="PackedScene" uid="uid://c2h78s2ac0wkw" path="res://Interface/HUD/HUD.tscn" id="2_x7vxg"]
+[ext_resource type="PackedScene" uid="uid://5f81ukx3rk76" path="res://Personnages/Joueur/Joueur.tscn" id="3_pgcbd"]
+[ext_resource type="Texture2D" uid="uid://w0o02m03qmvq" path="res://Interface/HUD/Images/AbilityButton-Stop.png" id="3_rdgcs"]
+
+[node name="BaseLevel" type="Node2D"]
+script = ExtResource("1_dyd6l")
+launchAbility = ExtResource("2_0v0nb")
+stopAbility = ExtResource("3_rdgcs")
+
+[node name="HUD" parent="." instance=ExtResource("2_x7vxg")]
+
+[node name="AbilityButton" parent="HUD" index="1"]
+anchors_preset = 2
+offset_left = 0.0
+offset_top = -75.0
+offset_right = 75.0
+offset_bottom = 0.0
+
+[node name="Joueur" parent="." instance=ExtResource("3_pgcbd")]
+position = Vector2(573, 321)
+scale = Vector2(0.7, 0.7)
+
+[connection signal="pressed" from="HUD/AbilityButton" to="Joueur" method="_on_ability_button_pressed"]
+
+[editable path="HUD"]

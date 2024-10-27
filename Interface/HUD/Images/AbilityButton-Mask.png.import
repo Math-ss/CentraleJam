@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://buim06i326sn3"
+path="res://.godot/imported/AbilityButton-Mask.png-916caa6d001735addc9957c68089f342.res"
+
+[deps]
+
+source_file="res://Interface/HUD/Images/AbilityButton-Mask.png"
+dest_files=["res://.godot/imported/AbilityButton-Mask.png-916caa6d001735addc9957c68089f342.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

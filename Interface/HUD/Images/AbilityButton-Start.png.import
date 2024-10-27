@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://88t1k0j0sq4b"
-path="res://.godot/imported/setting.png-6592cf1baf45dd8fbcd02fb71a8d5544.ctex"
+uid="uid://dilbukr57elu4"
+path="res://.godot/imported/AbilityButton-Start.png-89fddd829327dc639caa91282a59c49f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/assets/setting.png"
-dest_files=["res://.godot/imported/setting.png-6592cf1baf45dd8fbcd02fb71a8d5544.ctex"]
+source_file="res://Interface/HUD/Images/AbilityButton-Start.png"
+dest_files=["res://.godot/imported/AbilityButton-Start.png-89fddd829327dc639caa91282a59c49f.ctex"]
 
 [params]
 

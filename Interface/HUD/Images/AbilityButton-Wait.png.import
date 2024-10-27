@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be1rxc0ekydky"
-path="res://.godot/imported/sound.png-206fedd133a6b21b24b31c9bd84de1e7.ctex"
+uid="uid://byftu226kox6x"
+path="res://.godot/imported/AbilityButton-Wait.png-fe56dc0c0ab8de3c52090e010af2b97f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Interface/assets/sound.png"
-dest_files=["res://.godot/imported/sound.png-206fedd133a6b21b24b31c9bd84de1e7.ctex"]
+source_file="res://Interface/HUD/Images/AbilityButton-Wait.png"
+dest_files=["res://.godot/imported/AbilityButton-Wait.png-fe56dc0c0ab8de3c52090e010af2b97f.ctex"]
 
 [params]
 

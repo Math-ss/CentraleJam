@@ -5,15 +5,18 @@ signal player_died(reason : String)
 signal player_switch_costume(previous : Costume, new : Costume)
 
 enum Costume {RAW, PIG, COW, GOOSE, SHEEP}
+enum AbilityButtonMode {USABLE, STOPPABLE, USING, LOADING, DISABLE, INVISIBLE}
 
 @export_group("Gestion des capacités speciales")
+@export var attenteVache 		: float = 5.0
+@export var attenteOie 			: float = 5.0
+
+@export_subgroup("Cochon")
 @export var attenteCochon 		: float = 5.0
 @export var dureeDashCochon		: float = 5.0
 @export var multVitesseCochon	: float = 2.0
 
-@export var attenteVache 		: float = 5.0
-@export var attenteOie 			: float = 5.0
-
+@export_subgroup("Mouton")
 @export var attenteMouton 		: float = 5.0
 @export var dureeSuiviMouton 	: float = 5.0
 
@@ -29,17 +32,21 @@ var _speA_dir = Vector2.ZERO
 
 ## Private methods
 func _launch_specific_ability_cooldown():
-	#TODO : Make the correct change to the button
-	$"SpeTimer".start(_speA_cooldowns[_current_costume])
+	if _current_costume == Costume.RAW :
+		getLevelManager().setAbilityButtonMode(AbilityButtonMode.INVISIBLE)
+		$"SpeTimer".stop()
+	else:
+		getLevelManager().setAbilityButtonMode(AbilityButtonMode.LOADING)
+		$"SpeTimer".start(_speA_cooldowns[_current_costume])
 
 func _enable_specific_ability():
-	#TODO : The access to the input allowing to stop the ability should be setup there
 	_speA_enable = true
 	match _current_costume :		
 		Costume.PIG :
 			_speA_dir = (get_global_mouse_position() - get_global_transform().get_origin()).normalized()
 			_speA_input = false #Block input from the player
 			$"SpeTimer".start(dureeDashCochon)
+			getLevelManager().setAbilityButtonMode(AbilityButtonMode.USING)
 
 		Costume.COW :
 			#TODO : Find a specific ability
@@ -51,11 +58,13 @@ func _enable_specific_ability():
 			collision_layer = 2
 			collision_mask = 2
 			z_index = 5 #If specific overlapping need to be set in the scene
+			getLevelManager().setAbilityButtonMode(AbilityButtonMode.STOPPABLE)
 
 		Costume.SHEEP :
 			$AudioStreamPlayer2D.play()
 			getLevelManager().sheep_follow_leader_start.emit(self, INF) #ENH : Maybe call after the sheep stop screaming ?
 			$"SpeTimer".start(dureeSuiviMouton)
+			getLevelManager().setAbilityButtonMode(AbilityButtonMode.USING)
 
 func _disable_specific_ability(force : bool = false) -> bool:
 	if not _speA_enable : return false
@@ -143,6 +152,8 @@ func _ready():
 	_costumes[Costume.SHEEP] = _create_costume(preload("res://Personnages/Mouton/Mouton.tscn"))
 	_speA_cooldowns[Costume.SHEEP] = attenteMouton
 
+	switch_costume(Costume.RAW)
+
 func _process(_delta):
 	if _speA_input:
 		if Input.is_action_pressed("forward"):
@@ -172,9 +183,15 @@ func _on_selection_button_pressed():
 
 func _on_spe_timer_timeout(): 
 	if _speA_enable : # When specific abilities with determined time ends
-		_disable_specific_ability(true)		
+		_disable_specific_ability(true)
 		_launch_specific_ability_cooldown()
 
 	else: # When the cooldown of the ability ends
-		#TODO : Enable Ability button
-		pass
+		getLevelManager().setAbilityButtonMode(AbilityButtonMode.USABLE)
+
+func _on_ability_button_pressed():
+	if _speA_enable : 
+		_disable_specific_ability()
+		_launch_specific_ability_cooldown()
+	else : 
+		_enable_specific_ability()

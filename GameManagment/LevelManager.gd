@@ -1,9 +1,18 @@
 extends Node2D
-class_name  LevelManager
+class_name LevelManager
 
-signal sheep_follow_leader_start(leader : Mouton, duration : float)
-signal sheep_follow_leader_stop(leader : Mouton, duration : float)
+signal sheep_follow_leader_start(leader : Sprite, duration : float)
+signal sheep_follow_leader_stop(leader : Sprite)
 signal goose_repeat_leader(durationAVG : float, durationVAR : float)
+
+@export_group("HUD Management")
+@export var launchAbility           : CompressedTexture2D
+@export var launchAbilityPressed    : CompressedTexture2D
+@export var stopAbility             : CompressedTexture2D
+@export var stopAbilityPressed      : CompressedTexture2D
+@export var loadingAbility          : CompressedTexture2D
+@export var usingAbility            : CompressedTexture2D
+@export var disabledAbility         : CompressedTexture2D
 
 @export_group("Mouton Management")
 @export var moutonTempsMoyen = 0.0
@@ -11,7 +20,7 @@ signal goose_repeat_leader(durationAVG : float, durationVAR : float)
 @export var moutonTempsMultiplicateur = 5.0
 var sheepArray : Array[Mouton] = []
 
-@export_group("Mouton Management")
+@export_group("Oie Management")
 @export_subgroup("Attente des cris")
 @export var oieAttenteMoyen = 0.0
 @export var oieAttenteVariance = 0.0
@@ -35,6 +44,37 @@ func _start_sheep_leading():
 func _start_goose_leading():
     _timerGoose = randfn(moutonTempsMoyen, moutonTempsVariance)
     goose_repeat_leader.emit(oieReponseMoyen, oieReponseVariance)
+
+## Public functions
+
+func getPlayer() -> Joueur : return $Joueur
+
+func getHUD() -> CanvasLayer : return $HUD
+
+func setAbilityButtonMode(mode : Joueur.AbilityButtonMode):
+    match mode:
+        Joueur.AbilityButtonMode.USABLE:
+            $HUD/AbilityButton.visible = true
+            $HUD/AbilityButton.disabled = false
+            $HUD/AbilityButton.texture_normal = launchAbility
+        Joueur.AbilityButtonMode.STOPPABLE:
+            $HUD/AbilityButton.visible = true
+            $HUD/AbilityButton.disabled = false
+            $HUD/AbilityButton.texture_normal = stopAbility
+        Joueur.AbilityButtonMode.USING:
+            $HUD/AbilityButton.visible = true
+            $HUD/AbilityButton.disabled = true
+            $HUD/AbilityButton.texture_disabled = usingAbility
+        Joueur.AbilityButtonMode.LOADING:
+            $HUD/AbilityButton.visible = true
+            $HUD/AbilityButton.disabled = true
+            $HUD/AbilityButton.texture_disabled = loadingAbility
+        Joueur.AbilityButtonMode.DISABLE:
+            $HUD/AbilityButton.visible = true
+            $HUD/AbilityButton.disabled = true
+            $HUD/AbilityButton.texture_disabled = disabledAbility
+        Joueur.AbilityButtonMode.INVISIBLE:
+            $HUD/AbilityButton.visible = false
 
 ## Specific signals
 

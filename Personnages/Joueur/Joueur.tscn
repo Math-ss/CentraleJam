@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://dorwtbivsnapb"]
+[gd_scene load_steps=7 format=3 uid="uid://5f81ukx3rk76"]
 
 [ext_resource type="PackedScene" uid="uid://cs1m3wwdo84qq" path="res://Personnages/Sprite.tscn" id="1_nvl1o"]
 [ext_resource type="Script" path="res://Personnages/Joueur/Joueur.gd" id="2_cihgd"]
@@ -11,11 +11,11 @@ radius = 76.0
 
 [node name="Joueur" instance=ExtResource("1_nvl1o")]
 script = ExtResource("2_cihgd")
+attenteVache = 5.0
+attenteOie = 5.0
 attenteCochon = 5.0
 dureeDashCochon = 5.0
 multVitesseCochon = 2.0
-attenteVache = 5.0
-attenteOie = 5.0
 attenteMouton = 5.0
 dureeSuiviMouton = 5.0
 
@@ -30,6 +30,7 @@ animation = &"Walk"
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 
 [node name="SpeTimer" type="Timer" parent="." index="4"]
+one_shot = true
 
 [node name="SelectionButton" type="TextureButton" parent="." index="5"]
 z_index = 10
@@ -50,4 +51,5 @@ texture_click_mask = ExtResource("4_yujnw")
 visible = false
 z_index = 10
 
+[connection signal="timeout" from="SpeTimer" to="." method="_on_spe_timer_timeout"]
 [connection signal="pressed" from="SelectionButton" to="." method="_on_selection_button_pressed"]
